@@ -11,7 +11,7 @@ terraform {
 inputs = {
   gke_primary_node_type = "n1-standard-1"
   gke_num_nodes = 1
-  cluster_base_url = "gke.nategramer.com"
+  cluster_ingress_domain = "gke.nategramer.com"
 }
 
 include "root_terragrunt_config" {
